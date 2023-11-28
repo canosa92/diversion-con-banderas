@@ -8,3 +8,48 @@ body {
 h1 {
   color: #333;
 }
+
+#countries-list{  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.contenedor-Paises{
+  position: relative;
+  width: 200px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    background-color:#88828234;
+    transition: all 0.5s ease;
+}
+  
+
+.contenedor-Paises img {
+  display: block;
+  margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+    height: 100px; 
+  }
+
+.contenedor-Paises h3{
+  text-align: center;
+  width: 200px;
+  }
+
+.info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color:white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding:10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.show-info{
+  opacity: 1;
+}
